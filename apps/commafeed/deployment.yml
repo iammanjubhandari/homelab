@@ -19,4 +19,6 @@ spec:
         fsGroup: 2000
       containers:
       - name: commafeed
-        image: athou/commafeed:4.5.0     
+        image: athou/commafeed:4.5.0
+        ports:
+        - containerPort: 8082
