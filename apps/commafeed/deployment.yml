@@ -4,16 +4,14 @@ metadata:
   name: iammanju-commafeed
   namespace: iammanju-commafeed
 
+
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: commafeed
+      app.iammanju.io/name: "commafeed"
   
-  template:
-    metadata:
-      labels:
-        app: commafeed
+
     
     spec:
       securityContext:
@@ -22,7 +20,7 @@ spec:
         fsGroup: 2000
       
       containers:
-      - name: commafeed
+      - name: iammanju-rss-container
         image: athou/commafeed:4.5.0
 
         ports:
