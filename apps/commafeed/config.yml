@@ -5,3 +5,4 @@ metadata:
   namespace: iammanju-commafeed
 data:
   APP_NAME: "Manju's RSS Reader"
+  LOG_LEVEL: "INFO"
