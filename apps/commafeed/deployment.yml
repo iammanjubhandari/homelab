@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: iammanju-commafeed
   namespace: iammanju-commafeed
+  labels:
+    app.iammanju.io/name: "commafeed"
+    app.iammanju.io/version: "4.5.0"
 
 
 spec:
@@ -10,7 +13,11 @@ spec:
   selector:
     matchLabels:
       app.iammanju.io/name: "commafeed"
-  
+      
+  template:
+    metadata:
+      labels:
+        app.iammanju.io/name: "commafeed"
 
     
     spec:
