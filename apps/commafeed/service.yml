@@ -10,3 +10,4 @@ spec:
     targetPort: 8083
   selector:
     app.iammanju.io/name: "commafeed"
+  type: ClusterIP
