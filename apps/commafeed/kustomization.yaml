@@ -6,3 +6,8 @@ resources:
 - service.yaml
 - config.yaml
 - deployment.yaml
+
+
+commonLabels:
+  app.iammanju.io/managed-by: "manju"
+  app.iammanju.io/environment: "homelab"
