@@ -6,6 +6,7 @@ metadata:
   labels:
     app.iammanju.io/name: "commafeed"
     app.iammanju.io/version: "4.5.0"
+    app.iammanju.io/maintainer: "manju"
 
 
 spec:
@@ -18,7 +19,8 @@ spec:
     metadata:
       labels:
         app.iammanju.io/name: "commafeed"
-
+        app.iammanju.io/component: "rss-reader"
+        app.iammanju.io/tier: "frontend"
     
     spec:
       securityContext:
