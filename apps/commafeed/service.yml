@@ -5,7 +5,8 @@ metadata:
   namespace: iiammanju-commafeed
 spec:
   ports:
-  - port: 8083
+  - name: web-ui
+    port: 8083
     targetPort: 8083
   selector:
-    app: commafeed
+    app.iammanju.io/name: "commafeed"
